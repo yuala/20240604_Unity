@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameOver : MonoBehaviour
+{
+    //ï«Åiwall_bottomÅjÇ…Ç‘Ç¬Ç©Ç¡ÇΩéû
+    private void OnCollisionEnter(Collision collision)
+    {
+        SceneManager.LoadScene("Result");
+        Destroy(collision.gameObject);
+    }
+
+
+}
